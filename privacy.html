@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PhotoTalk 隐私政策：说明本地处理、相册权限、加密密码与不收集个人数据的承诺。"
+    />
+    <title>隐私政策 · PhotoTalk</title>
+    <link rel="icon" href="/PhotoTalk/favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="/PhotoTalk/assets/main-hmYnTECx.js"></script>
+    <link rel="stylesheet" crossorigin href="/PhotoTalk/assets/main-ByjiWct5.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap inner">
+        <a class="brand" href="./index.html">
+          <strong>PhotoTalk</strong>
+          <span>隐私政策</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a href="./privacy.html" aria-current="page">隐私政策</a>
+          <a href="./privacy-en.html">English</a>
+          <a href="./support.html">支持</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap legal">
+      <h1>PhotoTalk 隐私政策</h1>
+      <p class="meta">
+        生效日期：2026-09-09 · 适用于 iOS / iPadOS 应用 PhotoTalk<br />
+        本页供 App Store 审核与用户查阅。英文版见
+        <a href="./privacy-en.html">Privacy Policy (English)</a>。
+      </p>
+
+      <div class="callout">
+        <strong>一句话总结</strong>
+        PhotoTalk
+        <strong>不收集、不上传、不出售</strong>
+        您的个人数据。照片、隐藏文本与密码均在您的设备本地处理；开发者不运营后端服务来接收这些内容。
+      </div>
+
+      <h2>1. 我们是谁</h2>
+      <p>
+        PhotoTalk（「本应用」）是一款在设备本地完成图像隐写与口令加密的工具应用。您可在图片中嵌入加密文字，或从含隐藏信息的无损
+        PNG 中解密读取。
+      </p>
+
+      <h2>2. 我们收集哪些数据？</h2>
+      <p>
+        <strong>我们不收集个人数据。</strong>
+        本应用当前版本：
+      </p>
+      <ul>
+        <li>不要求注册或登录；</li>
+        <li>不将照片、文本、密码或使用记录传输至开发者服务器；</li>
+        <li>不集成第三方分析、广告、社交登录或崩溃上报 SDK；</li>
+        <li>不使用广告标识符（IDFA）或进行跨 App / 跨网站跟踪。</li>
+      </ul>
+      <p>
+        因此，在 App Store Connect「App 隐私」中，开发者声明为
+        <strong>Data Not Collected（不收集数据）</strong>。
+      </p>
+
+      <h2>3. 设备本地如何使用您的内容</h2>
+      <p>
+        下列数据仅存在于您的设备（或您主动保存到系统相册 / 剪贴板的位置），
+        <strong>不会</strong>作为「由开发者收集的数据」离开设备发往我们：
+      </p>
+
+      <h3>3.1 照片</h3>
+      <ul>
+        <li>
+          <strong>读取</strong>：经系统照片选择器（PhotosPicker）选择载体图或隐写图，用于本地嵌入 /
+          提取。
+        </li>
+        <li>
+          <strong>写入</strong>：在您确认后，将处理后的<strong>无损 PNG</strong>保存到系统相册。
+        </li>
+        <li>权限文案见系统弹窗；您可随时在 iOS「设置」中撤销相册权限。</li>
+      </ul>
+
+      <h3>3.2 您输入的文字</h3>
+      <p>
+        待隐藏文本仅在内存中处理：先经您设置的密码加密，再写入图片像素的最低有效位（LSB）。我们无法远程访问该文本。
+      </p>
+
+      <h3>3.3 密码</h3>
+      <p>
+        密码由您创建并仅在设备上用于密钥派生（PBKDF2）与 AES-GCM
+        加解密。密码<strong>不会</strong>上传、备份到我们的服务器，也不会用于广告画像。若您忘记密码，隐藏内容可能无法恢复——这是本地加密的预期结果，而非数据泄露。
+      </p>
+
+      <h3>3.4 剪贴板</h3>
+      <p>
+        仅当您在「读取文字」页主动点击「复制到剪贴板」时，已解密文本才会写入系统剪贴板，便于您粘贴到其他应用。
+      </p>
+
+      <h2>4. 加密说明（透明度）</h2>
+      <p>
+        本应用使用行业标准算法（口令派生 + AES-GCM）保护嵌入内容，目的是防止他人在<strong>不知晓密码</strong>的情况下轻易读出隐藏文字。加密在本地完成；这不改变「我们不收集数据」的事实。涉及出口合规的申报由开发者在上架流程中另行完成。
+      </p>
+
+      <h2>5. 数据共享与出售</h2>
+      <p>
+        我们不与第三方共享、出售或出租您的个人数据。因为我们并不收集此类数据，也就不存在向广告网络、数据经纪商或分析服务商披露的情形。
+      </p>
+
+      <h2>6. 儿童隐私</h2>
+      <p>
+        本应用不面向 13
+        岁以下儿童收集数据。我们不故意收集儿童的个人信息。若您认为未成年人在未经监护人同意的情况下使用了本应用，请通过支持页联系我们。
+      </p>
+
+      <h2>7. 数据留存与删除</h2>
+      <p>
+        由于我们不在服务器保存您的内容，不存在「向开发者申请删除云端副本」的流程。您可通过删除本应用、删除相册中的相关图片，以及清除剪贴板，移除设备上的相关材料。
+      </p>
+
+      <h2>8. 第三方服务与链接</h2>
+      <p>
+        当前应用二进制不嵌入第三方数据收集 SDK。本隐私网站若由 GitHub Pages
+        托管，访问网站时可能产生 GitHub 作为托管方的标准网络日志（由 GitHub
+        按其政策处理）；这与 iOS 应用内的数据处理相互独立。
+      </p>
+
+      <h2>9. 政策变更</h2>
+      <p>
+        若产品日后引入需要收集数据的功能（例如可选的诊断上报），我们将更新本政策与 App Store
+        隐私标签，并视情况征得同意。请以本页最新「生效日期」为准。
+      </p>
+
+      <h2>10. 联系我们</h2>
+      <p>
+        隐私相关问询请前往
+        <a href="./support.html">支持与联系</a>
+        页面。我们将在合理期限内回复。
+      </p>
+
+      <h2>11. App Store 隐私标签对照（便于审核）</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>数据类型</th>
+              <th>是否收集</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>联系信息</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>健康与健身</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>财务信息</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>位置</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>敏感信息</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>联系人</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>用户内容（照片 / 文本）</td>
+              <td>否*</td>
+              <td>仅本地处理；开发者不接收</td>
+            </tr>
+            <tr>
+              <td>浏览历史 / 搜索历史</td>
+              <td>否</td>
+              <td>无</td>
+            </tr>
+            <tr>
+              <td>标识符</td>
+              <td>否</td>
+              <td>无 IDFA / 账户 ID 上报</td>
+            </tr>
+            <tr>
+              <td>使用数据 / 诊断</td>
+              <td>否</td>
+              <td>无分析或崩溃云上报</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        *Apple 对「收集」的定义通常指传输到开发者或第三方可控的服务器/环境。PhotoTalk
+        的照片与文本停留在用户设备与用户自己的相册中，故按「不收集」申报。若未来版本改变此架构，将同步更新本表与 Connect 声明。
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap inner">
+        <div>© <span data-year></span> PhotoTalk</div>
+        <div class="lang-switch">
+          <a href="./privacy-en.html">English</a>
+          ·
+          <a href="./index.html">首页</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
